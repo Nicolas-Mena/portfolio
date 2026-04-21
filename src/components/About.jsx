@@ -1,13 +1,13 @@
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import './About.css'
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import "./About.css";
 
 const stats = [
-  { value: '1+', label: 'Years of experience'  },
-  { value: '4',  label: 'Academic projects'    },
-]
+  { value: "2+", label: "Years of experience" },
+  { value: "4", label: "Academic projects" },
+];
 
 export default function About() {
-  const ref = useScrollAnimation()
+  const ref = useScrollAnimation();
 
   return (
     <section id="about" className="about" ref={ref}>
@@ -20,10 +20,10 @@ export default function About() {
               Passionate about building <span>great products</span>
             </h2>
             <p className="about-desc animate delay-2">
-              I'm a full stack developer with a strong eye for design and a
-              love for clean, maintainable code. I enjoy taking complex
-              problems and turning them into simple, elegant solutions that
-              users actually enjoy using.
+              I'm a full stack developer with a strong eye for design and a love
+              for clean, maintainable code. I enjoy taking complex problems and
+              turning them into simple, elegant solutions that users actually
+              enjoy using.
             </p>
             <p className="about-desc animate delay-3">
               When I'm not coding you'll find me exploring new technologies,
@@ -35,7 +35,10 @@ export default function About() {
           {/* Stats column */}
           <div className="about-stats">
             {stats.map(({ value, label }, i) => (
-              <div key={label} className={`stat-card animate from-screen delay-${i + 2}`}>
+              <div
+                key={label}
+                className={`stat-card animate from-screen delay-${i + 2}`}
+              >
                 <span className="stat-value">{value}</span>
                 <span className="stat-label">{label}</span>
               </div>
@@ -44,5 +47,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

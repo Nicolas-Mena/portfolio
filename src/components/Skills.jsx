@@ -31,7 +31,7 @@ export default function Skills() {
 
         <div className="skills-grid">
           {categories.map(({ title, skills }, ci) => (
-            <div key={title} className={`skill-category animate delay-${ci + 1}`}>
+            <div key={title} className={`skill-category animate from-screen delay-${ci + 1}`}>
               <h3 className="category-title">{title}</h3>
               <ul className="skill-list">
                 {skills.map((skill) => (

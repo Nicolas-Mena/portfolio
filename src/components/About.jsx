@@ -35,7 +35,7 @@ export default function About() {
           {/* Stats column */}
           <div className="about-stats">
             {stats.map(({ value, label }, i) => (
-              <div key={label} className={`stat-card animate delay-${i + 2}`}>
+              <div key={label} className={`stat-card animate from-screen delay-${i + 2}`}>
                 <span className="stat-value">{value}</span>
                 <span className="stat-label">{label}</span>
               </div>

@@ -46,7 +46,7 @@ export default function Experience() {
 
         <div className="timeline">
           {jobs.map(({ role, company, period, bullets }, i) => (
-            <div key={i} className={`timeline-item animate delay-${i + 1}`}>
+            <div key={i} className={`timeline-item animate from-screen delay-${i + 1}`}>
               <div className="timeline-dot" />
               <div className="timeline-card">
                 <div className="timeline-header">

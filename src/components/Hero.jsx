@@ -48,6 +48,23 @@ export default function Hero() {
       <div className="hero-glow" />
 
       <div className="hero-content">
+        {/* 3D Geometric Element */}
+        <div className="hero-3d-wrapper">
+          <div className="geo-scene">
+            <div className="geo-cube">
+              <div className="geo-face geo-front" />
+              <div className="geo-face geo-back" />
+              <div className="geo-face geo-left" />
+              <div className="geo-face geo-right" />
+              <div className="geo-face geo-top" />
+              <div className="geo-face geo-bottom" />
+            </div>
+          </div>
+          {/* Orbiting ring */}
+          <div className="geo-ring" />
+          <div className="geo-ring geo-ring-2" />
+        </div>
+
         <p className="hero-greeting animate">Hi there, I'm</p>
         <h1 className="hero-name animate delay-1">Nicolas</h1>
         <h2 className="hero-role animate delay-2">

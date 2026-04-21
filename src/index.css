@@ -21,10 +21,6 @@
   --section-padding: 120px 0;
   --container-width: 1100px;
 
-  --laptop-w: 480px;
-  --laptop-h: 300px;
-  --story-h:  500vh;
-  --panel-transition: 0.55s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ── Reset ─────────────────────────────────────────────── */
